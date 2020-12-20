@@ -29,7 +29,7 @@ Follow [Apple's guidance](https://developer.apple.com/documentation/xcode/adding
 
 ### In your source code
 
-```
+```swift
 import ProvisioningProfile
 let profileName = ProvisioningProfile.profile()?.name
 let profileExpiry = ProvisioningProfile.profile()?.expiryDate
