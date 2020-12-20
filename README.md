@@ -51,8 +51,10 @@ See the test apps in the `Examples` folder for runnable example usage.
 
 ### In your build phases
 
-You can add the `script.sh` shell script as a Run Script build phase to provide a warning or error if the profile
-will expire soon. See the test apps in `Examples` for an example of how to make use of the script.
+You can add the `check_provisioning_expiry.sh` shell script as a Run Script build phase to provide a warning or error if the profile
+will expire soon.
+
+Copy the script file out of the package/repo and add it to your own project's files. See the build phases of the test apps in `Examples` for an example of how to make use of the script.
 
 ## Contributions
 

@@ -182,6 +182,7 @@
 				0C6DD503258F936B00586400 /* Sources */,
 				0C6DD504258F936B00586400 /* Frameworks */,
 				0C6DD505258F936B00586400 /* Resources */,
+				0C6DD58B258F9FCA00586400 /* Check provisioning expiry */,
 			);
 			buildRules = (
 			);
@@ -202,6 +203,7 @@
 				0C6DD525258F973300586400 /* Sources */,
 				0C6DD526258F973300586400 /* Frameworks */,
 				0C6DD527258F973300586400 /* Resources */,
+				0C6DD58F258FA22E00586400 /* Check provisioning expiry */,
 			);
 			buildRules = (
 			);
@@ -222,6 +224,7 @@
 				0C6DD565258F97B600586400 /* Sources */,
 				0C6DD566258F97B600586400 /* Frameworks */,
 				0C6DD567258F97B600586400 /* Resources */,
+				0C6DD590258FA24300586400 /* Check provisioning expiry */,
 			);
 			buildRules = (
 			);
@@ -305,6 +308,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C6DD58B258F9FCA00586400 /* Check provisioning expiry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Check provisioning expiry";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh $SRCROOT/../Scripts/check_provisioning_expiry.sh\n";
+		};
+		0C6DD58F258FA22E00586400 /* Check provisioning expiry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Check provisioning expiry";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh $SRCROOT/../Scripts/check_provisioning_expiry.sh\n";
+		};
+		0C6DD590258FA24300586400 /* Check provisioning expiry */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Check provisioning expiry";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh $SRCROOT/../Scripts/check_provisioning_expiry.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C6DD503258F936B00586400 /* Sources */ = {
