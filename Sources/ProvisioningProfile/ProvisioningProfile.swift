@@ -30,6 +30,8 @@ public struct ProvisioningProfile {
     
     /// The provisioning profile for the current app, if available.
     /// On simulators this function will always return `nil`.
+    /// In a macOS app this function will always return `nil` unless the app requires certain entitlements,
+    /// such as push notifications and iCloud.
     public static func profile() -> ProvisioningProfile? {
         if cachedProfile == nil {
             cachedProfile = loadProfile()
