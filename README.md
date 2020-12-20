@@ -1,7 +1,8 @@
 # ProvisioningProfile
 
 This package will provide you easy access to useful information on the provisioning profile used in your app,
-such as the profile's name and the date it will expire.
+such as the profile's name and the date it will expire. Read [my blog post for this library](https://chris-mash.medium.com/knowing-when-your-ios-apps-provisioning-profile-is-going-to-expire-4689d03d0d5) for a bit more of a discussion
+around this.
 
 You can use this information to display in the development versions of your apps to make it easy to check
 when the profile will expire (and hence, when the app will stop working without being reinstalled again).
