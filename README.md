@@ -15,7 +15,7 @@ Platforms supported:
 * iOS
 * watchOS
 * tvOS
-* macOS (TODO)
+* macOS
 
 There's also a shell script included in the package that can be added as a Run Script build phase in your app
 so that when building or archiving you can get a warning or error if the provisioning profile is going to expire soon.
@@ -35,6 +35,8 @@ let profileExpiry = ProvisioningProfile.profile()?.expiryDate
 let profileExpiryFormatted = ProvisioningProfile.profile().formattedExpiryDate
 ```
 
+### Customisation
+
 The `ProvisioningProfile` class has the following customisation points:
 
 *  The static property `dateFormatter` can be used to set a custom `DateFormatter` for use in generating the `formattedExpiryDate`
@@ -42,6 +44,8 @@ property, if the default formatting is not suitable.
 * The static property `logger` can be used to provide a delegate that receives information about errors or warnings
 that have occurred during loading and parsing of the provisioning profile. See the `Logger` protocol for more 
 information.
+
+### Example apps
 
 See the test apps in the `Examples` folder for runnable example usage.
 
@@ -75,4 +79,4 @@ any warnings after the documentation is generated), so you can be sure the API d
 Xcode will be correct and useful to users.
 
 Generate the documentation using the following command in the root of the project:
-`jazzy --module ProvisioningProfile --swift-build-tool spm --build-tool-arguments -Xswiftc,-swift-version,-Xswiftc,5`
+`jazzy`
