@@ -1,5 +1,8 @@
 # ProvisioningProfile
 
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FChrisMash%2FProvisioningProfile%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/ChrisMash/ProvisioningProfile)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FChrisMash%2FProvisioningProfile%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/ChrisMash/ProvisioningProfile)
+
 Listed on the [Swift Package Index](https://swiftpackageindex.com/ChrisMash/ProvisioningProfile).
 
 This package will provide you easy access to useful information on the provisioning profile used in your app,
