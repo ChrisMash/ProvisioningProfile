@@ -63,19 +63,29 @@ public struct ProvisioningProfile {
             profileExt = "mobileprovision"
         #endif
         
+        // Try reading the file as ASCII (used to work ok, pre Xcode 16?)
         do {
-            // Load the file into a String
-            let content = try FileLoader.loadFile(bundle: bundle,
-                                                    filename: "embedded",
-                                                    extension: profileExt,
-                                                    encoding: .ascii)
-            // Parse it and return the profile
-            return ProvisioningProfileParser.parse(string: content, logger: logger)
+            let asciiContent = try FileLoader.loadFile(bundle: bundle,
+                                                       filename: "embedded",
+                                                       extension: profileExt,
+                                                       encoding: .ascii)
+            return ProvisioningProfileParser.parse(string: asciiContent, logger: logger)
+        } catch {
+            // That's ok
         }
-        catch {
+        
+        // Try reading the file as Latin-1 (works ok in Xcode 16)
+        do {
+            let latin1Content = try FileLoader.loadFile(bundle: bundle,
+                                                        filename: "embedded",
+                                                        extension: profileExt,
+                                                        encoding: .isoLatin1)
+            return ProvisioningProfileParser.parse(string: latin1Content, logger: logger)
+        } catch {
             logger?.log(.error, message: "Error loading profile: \(error)")
-            return nil
         }
+        
+        return nil
     }
     
     private static func format(date: Date) -> String {

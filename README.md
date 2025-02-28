@@ -65,7 +65,7 @@ Copy the script file out of the package/repo and add it to your own project's fi
 ## Contributions
 
 If you wish to make any contributions to this project, feel free to make a fork and then submit a pull request back
-with your proposed changes/additions.
+with your proposed changes/additions (maybe reach out to me first with your plans to gauge my willingness to accept the contribution).
 
 Make sure any changes or additions are covered with unit tests and the test apps are updated as appropriate. 
 
